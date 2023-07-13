@@ -1,0 +1,28 @@
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, #2e21ac, #e54c9c);
+    letter-spacing: 1.5px;
+}
+
+form div:last-of-type {
+    margin-bottom: 4rem;
+}
+
+button[type="submit"] {
+    background-image: linear-gradient(to bottom right, #2e21ac, #e54c9c);
+    letter-spacing: 1.5px;
+    margin-bottom: 5rem;
+}
+
+button[type="button"]{
+    top: 35px;
+}
+
+.failureMessage{
+    top: 20px;
+}
+
+.formContainer {
+    max-width: 500px;
+    min-height: 75%;
+}

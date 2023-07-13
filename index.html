@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Register Login page">
+    <meta name="author" content="Sukhbir Kaur Chung" />
+    <meta name="date" content="Jul 02, 2023" />
+
+    <link rel="icon" href="site-icon.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <title>Register-Login Demo Page</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="failureMessage alert alert-danger position-absolute d-none" role="alert"></div>
+
+    <div class="formContainer w-75 rounded-3 py-5 px-3 bg-white">
+        <h1 class="mb-5 text-center fw-bold">Login</h1>
+
+        <form>
+            <div class="mb-4">
+                <label for="username">Username</label>
+                <input type="text" class="form-control border-0 border-bottom border-dark rounded-0 shadow-none" id="username" required />
+            </div>
+
+            <div class="position-relative">
+                <label for="password">Password</label>
+                <input type="password" class="form-control border-0 border-bottom border-dark rounded-0 shadow-none" id="password" required />
+                <button type="button" class="btn position-absolute top-50 end-0 translate-middle shadow-none showHidePassword"><img src="showPassword-icon.png" alt="Show Password icon" /></button>
+                <button type="button" class="btn position-absolute top-50 end-0 translate-middle shadow-none showHidePassword"><img src="hidePassword-icon.png" alt="Hide Password icon" /></button>
+            </div>
+
+            <button type="submit" class="btn w-100 border-0 rounded-pill text-white shadow-none">LOGIN</button>
+        </form>
+
+        <div class="text-center">
+            <a href="signup.html" class="text-dark text-decoration-none fw-bold">SIGN UP</a>
+        </div>
+    </div>
+
+    <a class="d-none pageNavigationLink" href="userHomepage.html"></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
