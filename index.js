@@ -55,7 +55,7 @@ async function sendFormData(evt) {
 
     await axios.post(url, dataToBeSent)
         .then(response => {
-            loader.classList.remove('d-none');
+            loader.classList.add('d-none');
             document.querySelector('.pageNavigationLink').click();
         })
         .catch(err => {
