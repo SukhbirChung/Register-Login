@@ -23,6 +23,5 @@ button[type="button"]{
 }
 
 .formContainer {
-    max-width: 500px;
-    min-height: 75%;
+    max-width: 450px;
 }
