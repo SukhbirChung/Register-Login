@@ -28,9 +28,13 @@ function checkForSpaces() {
 
 /* Submitting Form */
 const form = document.querySelector('form');
+const loader = document.querySelector('.loader');
 form.addEventListener('submit', sendFormData);
 
 async function sendFormData(evt) {
+    evt.preventDefault();
+    loader.classList.remove('d-none');
+
     let url = '';
 
     const dataToBeSent = {
@@ -39,8 +43,7 @@ async function sendFormData(evt) {
     }
 
     username.setCustomValidity('');
-    password.setCustomValidity('');
-    evt.preventDefault();
+    password.setCustomValidity('');    
 
     if (email) {
         dataToBeSent.email = email.value;
@@ -52,10 +55,11 @@ async function sendFormData(evt) {
 
     await axios.post(url, dataToBeSent)
         .then(response => {
-            //console.log(response.data)
+            loader.classList.remove('d-none');
             document.querySelector('.pageNavigationLink').click();
         })
         .catch(err => {
+            loader.classList.add('d-none');
             const failureMessage = document.querySelector('.failureMessage');
             failureMessage.classList.remove("d-none");
             failureMessage.textContent = err.response.data;

@@ -4,6 +4,19 @@ body {
     letter-spacing: 1.5px;
 }
 
+.loader{
+    background-color: rgba(0,0,0,0.75);
+    color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .loader img {
+        animation: 2s linear infinite load;
+    }
+
 form div:last-of-type {
     margin-bottom: 4rem;
 }
@@ -20,8 +33,15 @@ button[type="button"]{
 
 .failureMessage{
     top: 20px;
+    z-index: 9;
 }
 
 .formContainer {
     max-width: 450px;
+}
+
+@keyframes load{
+    to{
+        transform: rotate(360deg);
+    }
 }

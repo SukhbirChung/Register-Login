@@ -6,4 +6,4 @@ The website can be visited at [https://registerlogin.ca/](https://registerlogin.
 
 If you would like to examine the backend code, please refer to my **"mongooseConnections"** repository. 
 
-![site homepage image](homepageImage.png)
+![site homepage image](Images/homepageImage.png)
