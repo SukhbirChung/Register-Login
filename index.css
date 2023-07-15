@@ -24,7 +24,6 @@ form div:last-of-type {
 button[type="submit"] {
     background-image: linear-gradient(to bottom right, #2e21ac, #e54c9c);
     letter-spacing: 1.5px;
-    margin-bottom: 5rem;
 }
 
 button[type="button"]{
@@ -38,6 +37,8 @@ button[type="button"]{
 
 .formContainer {
     max-width: 450px;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 10px rgba(0,0,0,0.3);
 }
 
 @keyframes load{
