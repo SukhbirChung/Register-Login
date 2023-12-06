@@ -54,7 +54,13 @@ async function sendFormData(evt) {
         url = 'http://localhost:3000/login';
     }
 
-    await axios.post(url, dataToBeSent)
+    const options = {
+        method: 'POST',
+        url: url,
+        data: dataToBeSent
+    };
+
+    await axios.request(options)
         .then(response => {
             loader.classList.add('d-none');
             failureMessage.classList.add("d-none");
